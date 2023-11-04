@@ -92,7 +92,7 @@ input[type="number"]::-webkit-outer-spin-button {
     justify-content: center;
     gap: 2rem;
 }
-.fa-inputs,span{
+.fa-inputs,.tagname{
     color: var(--icons);
     font-size: 1.3rem;
     padding: 0.6rem 1rem;
@@ -128,6 +128,7 @@ input[type="number"]::-webkit-outer-spin-button {
     width: 100%;
     gap: 2.5rem;
     border-top: 1px solid #ffffff34;
+    margin-top: 1.5rem;
 }
 
 .result-value{
