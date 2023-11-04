@@ -163,3 +163,19 @@ input[type="number"]::-webkit-outer-spin-button {
     padding-top: 1.5rem;
     width: 100%;
 }
+
+.infos{
+    transition: .5s;
+    overflow-y: hidden;
+    animation: show 1s forwards;
+}
+
+@keyframes show {
+    0%{
+        height: 0;
+ 
+    }
+    100%{
+      height: 160px;
+    }
+}
