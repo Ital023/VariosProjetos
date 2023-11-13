@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+
+:root{
+    --cyan-darker: #2BB4B1;
+    --cyan-brighter: #49BEBD;
+    --cyan:hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray:hsl(204, 43%, 93%);
+    --grayish-blue:hsl(218, 22%, 67%);
+    font-size: 62.5%;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: var(--light-gray);
+    align-items: center;
+}
+
+.card{
+    width: 50rem;
+}
+
+.card-community{
+    background-color: #fff;
+    padding: 3rem;
+
+    >h1{
+        color: var(--cyan);
+        margin-bottom: 1.5rem;
+    }
+    >h2{
+        color: var(--bright-yellow);
+        margin-bottom: 1rem;
+    }
+    >p{
+        line-height: 2rem;
+        max-width: 45rem;
+        font-size: 1.3rem;
+        color: var(--grayish-blue);
+    }
+
+}
+
+.card-bottom{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.card-subs{
+    padding: 3rem;
+    background-color: var(--cyan-darker);
+    width: 50%;
+
+    >h1{
+        color: #fff;
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+    >p{
+        display: flex;
+        flex-direction: row;
+        gap: 0.75rem;
+        align-items: center;
+        color:#fff;
+        font-weight: bold;
+        margin-bottom: 2rem;
+        >span{
+            font-size: 1.25rem;
+            color: #ffffff8e;
+            font-weight: 400;
+        }
+    }
+    >button{
+        color: #fff;
+    }
+    >p:nth-child(2){
+        font-size: 2rem;
+        margin-bottom: 1rem;
+
+    }
+    >p:nth-child(3){
+        color: #ffffff97;
+    }
+    >button{
+        width: 100%;
+        text-align: center;
+        background-color: var(--bright-yellow);
+        border: none;
+        padding: 1rem;
+        border-radius: .75rem;
+        cursor: pointer;
+    }
+    
+}
+
+
+
+.card-whyus{
+    padding: 3rem;
+    color: #fff;
+    background-color: var(--cyan-brighter);
+    width: 50%;
+    >h1{
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+    >ul{
+        list-style: none;
+        color: #ffffffc8;
+
+        >li{
+            line-height: 1.5rem;
+    
+        }
+        
+        
+    }
+    
+    
+}
+
+@media screen and (max-width:540px){
+    .card{
+        margin-inline: 5rem;
+    }
+    .card-bottom{
+        flex-direction: column;
+        
+    }
+    .card-subs,.card-whyus{
+        width: 100%;
+    }
+}

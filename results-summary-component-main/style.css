@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+:root{
+    --light-red:hsl(0, 100%, 67%);
+    --orangey-yellow:hsl(39, 100%, 56%);
+    --green-teal:hsl(166, 100%, 37%);
+    --cobalt-blue:hsl(234, 85%, 45%);
+
+    --light-slate-blue-background: hsl(252, 100%, 67%);
+    --light-royal-blue-background: hsl(241, 81%, 54%);
+
+    --violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    height: 430px;
+    width: 600px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.092);
+}
+
+.card-result{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding-bottom: 1.5rem;
+    background-image: linear-gradient(to bottom, hsl(252, 51%, 49%) , hsl(241, 81%, 54%));
+
+}
+
+.card-result h1{
+    font-size: 2rem;
+    text-align: center;
+    color: var(--white);
+    margin-bottom: 0.7rem;
+}
+
+.circle p:nth-child(1){
+    color: var(--white);
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.circle p:nth-child(2){
+    color: var(--light-lavender);
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.p-result{
+    color: var(--light-lavender);
+    margin-bottom: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.card-result h2{
+    font-size: .95rem;
+    text-align: center;
+    color: var(--light-lavender);
+    font-weight: 500;
+
+}
+
+.card-summary{
+    width: 50%;
+    background-color: var(--white);
+    padding: 1.6rem 1.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+
+}
+
+.card-summary h1{
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: var(--dark-gray-blue);
+    margin-bottom: 0.5rem;
+}
+
+.habilities{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.habilities-card{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.9rem;
+    background-color: hsla(0, 100%, 67%, 0.08);
+    color: var(--light-red);
+    margin-bottom: 0.5rem;
+    border-radius: 8px;
+
+}
+
+.habilities-card:nth-child(2){
+    background-color: hsla(39, 100%, 56%, 0.08);
+    color: var(--orangey-yellow);
+}
+
+.habilities-card:nth-child(3){
+    background-color: hsla(166, 100%, 37%, 0.08);
+    color: var(--green-teal);
+}
+.habilities-card:nth-child(4){
+    background-color: hsla(234, 85%, 45%, 0.08);
+    color: var(--cobalt-blue);
+}
+
+.habilities-card__name{
+    display: flex;
+    flex-direction: row;
+    gap: .7rem;
+}
+
+.habilities-title{
+    font-size: 1.1rem;
+}
+
+.habilities-max{
+    font-weight: 900;
+    color: #000;
+}
+
+.habilities-hundred{
+    font-weight: 500;
+    color: #292f4994;
+    font-weight: 700;
+}
+
+.card-summary p:nth-child(1){
+    color: var(--light-red);
+    background-color: hsla(0, 100%, 67%, 0.08);
+}
+
+.btn-continue{
+    border: none;
+    background-color: rgb(48, 59, 89);
+    color: var(--white);
+    width: 100%;
+    padding: .8rem;
+    border-radius: 30px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: 0.5s;
+
+    &:hover{
+        background-color: rgba(48, 59, 89, 0.952);
+    }
+}
+
+.circle{
+   width: 150px;
+   height: 150px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   border-radius: 50%;
+   background: radial-gradient(circle, rgb(76, 34, 203), rgb(41, 25, 145));
+   margin-bottom: 20px;
+}
+
+@media (max-width:610px){
+    .card{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .p-result{
+        padding-top: 2rem;
+    }
+    .card{
+        box-shadow: none;
+    }
+}
