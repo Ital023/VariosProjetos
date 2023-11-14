@@ -16,28 +16,34 @@
         }
         .projetos{
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: repeat(3,1fr);
             gap: 1rem;
         }
         a{
-            background-color: darkblue;
+            background-color: darkgreen;
             color: antiquewhite;
             text-align: center;
             padding: .75rem;
             border-radius: 1.5rem;
             text-decoration: none;
             font-weight: bold;
+            transition: .5s;
+        }
+        a:hover{
+            background-color: rgba(0, 100, 0, 0.511);
+
         }
     </style>
 </head>
 <body>
-    <h1>Projetos</h1>
+    <h1>- Projetos -</h1>
     <div class="projetos">
         <a href="./Contador/index.html">Contador</a>
         <a href="./CalculadoraIMC/index.html">Calculadora-IMC</a>
         <a href="./product-preview-card-component-main/index.html">Product preview card</a>
         <a href="./results-summary-component-main/index.html">Results summary</a>
         <a href="./single-price-grid-component-master/index.html">Single Price Grid</a>
+        <a href="./nft-preview-card-component-main/index.html">NFT Preview</a>
     </div>
 
 
